@@ -26,7 +26,7 @@ void nightTrafficLight() {
 }
 
 void dayTrafficLight() {
-  digitalWrite(green_foot, LOW);
+  digitalWrite(red_foot, LOW);
   digitalWrite(green_foot, HIGH);
   digitalWrite(red, HIGH);
   delay(10000);
