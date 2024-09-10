@@ -20,7 +20,7 @@ void setup() {
 
 void nightTrafficLight() {
   digitalWrite(yellow, HIGH);
-  delay(100);  // Warte 100ms
+  delay(100);
   digitalWrite(yellow,LOW);
   delay(100);
 }
