@@ -1,4 +1,4 @@
-# include <Server.h>
+# include <Servo.h>
 
 Servo servo;
 int lightSensor1 = 9;
