@@ -13,7 +13,6 @@ int calculateLedPosition(int row, int led) {
 }
 
 bool integerState(int integer) {
-  Serial.println(integer%2);
   if (integer%2 > 0) {
     return false;
   } else {
@@ -66,7 +65,6 @@ void MartixLights(CRGB colorOne, CRGB colorTwo, int recursions = 10, int customD
     
     for(int y=0; y < 81; x++) {
       bool currentIntegerState = integerState(y);
-      Serial.println(currentIntegerState);
 
       if (currentIntegerState == currentState) {
         Mintrix.leds[y] = currentColor;
