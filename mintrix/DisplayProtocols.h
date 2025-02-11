@@ -37,7 +37,7 @@ void blinkLED(int row, int led, CRGB color, int recursions, int customDelay = 50
   }
 }
 
-void martixLights(CRGB colorOne, CRGB colorTwo, int recursions = 10, int customDelay = 500) {
+void matrixLights(CRGB colorOne, CRGB colorTwo, int recursions = 10, int customDelay = 500) {
   bool currentState = true;
   
   for(int x=0; x < recursions; x++) {
