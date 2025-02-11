@@ -13,5 +13,5 @@ void setup() {
 }
 
 void loop() {
-  martixLights(CRGB::Blue, CRGB::Red);
+  matrixLights(CRGB::Blue, CRGB::Red);
 }
