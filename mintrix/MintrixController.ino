@@ -1,6 +1,6 @@
 #include<Mintrix.h>
 #include "DisplayProtocols.h"
-#include "PictureDisplayScipt.h"
+#include "PictureDisplayProtocols.h"
 
 //
 // Loop and Setup Methods
