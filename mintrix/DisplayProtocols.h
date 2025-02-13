@@ -1,8 +1,13 @@
 int calculateLedPosition(int row, int led) {
   int exactRow = row-1;
   int exactLed = led-1;
+
+  if (exactRow%2 != 0) {
+    exactLed = 8-exactLed; 
+  }
   
   int returnValue = exactRow*9+exactLed;
+
   return returnValue;
 }
 
