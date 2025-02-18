@@ -13,5 +13,6 @@ void setup() {
 }
 
 void loop() {
-  matrixLights(CRGB::Blue, CRGB::Red);
+  displayPicture();
+  delay(5000);
 }
