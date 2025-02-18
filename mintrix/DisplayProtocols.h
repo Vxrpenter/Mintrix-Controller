@@ -1,6 +1,19 @@
-int calculateLedPosition(int row, int led) {
+int calculateUserLedPosition(int row, int led) {
   int exactRow = row-1;
   int exactLed = led-1;
+
+  if (exactRow%2 != 0) {
+    exactLed = 8-exactLed; 
+  }
+  
+  int returnValue = exactRow*9+exactLed;
+
+  return returnValue;
+}
+
+int calculateProgramLedPosition(int row, int led) {
+  int exactRow = row;
+  int exactLed = led;
 
   if (exactRow%2 != 0) {
     exactLed = 8-exactLed; 
@@ -19,7 +32,7 @@ void fillCompletely(CRGB color) {
 }
 
 void tracePathFrom(int row, int led, CRGB color, int customDelay = 500) {
-  int exactLed = calculateLedPosition(row, led);
+  int exactLed = calculateUserLedPosition(row, led);
   for(int x=exactLed; x < 81; x++) {
     Mintrix.leds[x] = color;
     Mintrix.show();
@@ -31,7 +44,7 @@ void tracePathFrom(int row, int led, CRGB color, int customDelay = 500) {
 }
 
 void blinkLED(int row, int led, CRGB color, int recursions, int customDelay = 500) {
-  int exactLed = calculateLedPosition(row, led);
+  int exactLed = calculateUserLedPosition(row, led);
   for(int x=0; x < recursions; x++) {
     Mintrix.leds[exactLed] = color;
     Mintrix.show();
