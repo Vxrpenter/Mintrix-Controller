@@ -1,4 +1,6 @@
 #include<Mintrix.h>
+#include "PixelArt.h"
+#include "Utility.h"
 #include "DisplayProtocols.h"
 #include "PictureDisplayProtocols.h"
 
@@ -14,5 +16,4 @@ void setup() {
 
 void loop() {
   displayPicture();
-  delay(5000);
 }
