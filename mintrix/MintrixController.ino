@@ -1,4 +1,4 @@
-#include<Mintrix.h>
+#include <Mintrix.h>
 #include "PixelArt.h"
 #include "Utility.h"
 #include "DisplayProtocols.h"
