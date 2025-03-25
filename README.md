@@ -9,7 +9,7 @@
 
 # Documentation for MintrixControllerScript
 
-### CalculateLedPosition
+### [CalculateLedPosition](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/DisplayProtocols.h#L1)
 
 The first value stands for the row and the second for the led. It gives you the user's position,
 meaning the one from viewing the Mintrix. This means it starts with 1 and not 0 like normal arrays,
@@ -20,7 +20,7 @@ int main() {
 }
 ```
 
-### CalculateProgramLedPosition
+### [CalculateProgramLedPosition](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/DisplayProtocols.h#L14)
 
 The first value stands for the row and the second for the led. It gives you the programs's position,
 meaning the one from viewing the Mintrix. This means it starts with 0 and ends with 9 like normal arrays.
@@ -30,7 +30,7 @@ int main() {
 }
 ```
 
-### FillCompletely
+### [FillCompletely](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/DisplayProtocols.h#L27)
 
 Fills all 81 pixels with exactly one color
 ```c++
@@ -39,7 +39,7 @@ int main() {
 }
 ```
 
-### TracePathFrom
+### [TracePathFrom](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/DisplayProtocols.h#L34)
 
 First put row and led, following with the color and then a custom delay (default 500ms). This makes
 the programm follow from the given cordinates to the end of the mintirx, restarting after reaching the end
@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-### BlinkLED
+### [BlinkLED](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/DisplayProtocols.h#L46)
 
 First enter row and led, then put color and recursions (default 10) ending with a custom delay (default 500ms). This makes the specified led blink until reaching the end of the delay.
 ```c++
@@ -59,7 +59,7 @@ int main() {
 }
 ```
 
-### MatrixLights
+### [MatrixLights](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/DisplayProtocols.h#L58)
 
 First enter two colors to be displayed, then number of recursions (default 10) and at last a custom delay (default 500ms). This makes one half of the pixels blink in one color, then switing to another color.
 ```c++
@@ -68,7 +68,7 @@ int main() {
 }
 ```
 
-### DisplayPicture
+### [DisplayPicture](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/PictureDisplayProtocols.h#L12)
 
 Displays a picture from the enum you enter, choose from the PixelArtType enum: [GLUMANDA, PIKACHU, POKEBALL, BLANK]
 ```c++
@@ -77,7 +77,7 @@ int main() {
 }
 ```
 
-### DisplayPixels
+### [DisplayPixels](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/PictureDisplayProtocols.h#L1)
 
 Displays the pixels that have been specified in a 9x9 array, accounting for 81 pixels in total. Just create an array like the one shown below and then put it into the function to display it on the mintrix.
 ```c++
