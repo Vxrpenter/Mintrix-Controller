@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>Arduino Sketches</h1>
+  <h1>Mintrix Controller</h1>
   
-  This repository is just a location to save my many failed c++ sketches for the arduino. There is also some added documentation down below for some of the projects. They don't typically belong to eachother and they are sometimes broken, not practical and were just created for testing
+  A software for easy displaying of pictures, blinking lights etc. for the mintrix c++ libary. It is used for LED Matrixes, specifically for 9x9 ones (81 Pixels)
 </div>
 
 ---
