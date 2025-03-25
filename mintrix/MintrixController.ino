@@ -1,4 +1,5 @@
 #include <Mintrix.h>
+#include "Enums.h"
 #include "PixelArt.h"
 #include "Utility.h"
 #include "DisplayProtocols.h"
@@ -15,5 +16,4 @@ void setup() {
 }
 
 void loop() {
-  displayPicture();
 }
