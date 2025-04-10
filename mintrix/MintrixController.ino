@@ -1,6 +1,7 @@
 #include <Mintrix.h>
 #include "Enums.h"
 #include "PixelArt.h"
+#include "Numbers.h"
 #include "Utility.h"
 #include "DisplayProtocols.h"
 #include "PictureDisplayProtocols.h"
