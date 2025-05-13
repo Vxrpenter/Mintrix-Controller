@@ -2,15 +2,18 @@
 #include "ESP8266WebServer.h"
 #include "ESP8266WiFi.h"
 
+// Manifest Includes
+#include "pictures/manifest.h"
+#include "animations/manifest.h"
+
 // Included Classes
 #include "WebHandler.h"
 #include "Enums.h"
-#include "PixelArt.h"
-//#include "Numbers.h"
 #include "Utility.h"
 #include "DisplayProtocols.h"
+#include "Effects.h"
 #include "PictureDisplayProtocols.h"
-
+#include "AnimationDisplayProtocols.h"
 //
 // Loop and Setup Methods
 //
@@ -28,5 +31,5 @@ void setup() {
 
 void loop() {
   Mintrix.handleWeb();
-  displayPicture(GLUMANDA);
+  displayAnimation(2, 2, animation);
 }
