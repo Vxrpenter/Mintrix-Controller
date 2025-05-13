@@ -1,4 +1,4 @@
-void displayPixels(CRGB picture[9][9]) {
+void displayFrame(CRGB picture[9][9]) {
   for (int i = 0; i < 9; i++) {
     for (int x = 0; x < 9; x++) {
       int currentPixel = calculateProgramLedPosition(i, x);
@@ -12,19 +12,19 @@ void displayPixels(CRGB picture[9][9]) {
 void displayPicture(PixelArtType pixelArt) {
   switch(pixelArt) {
     case GLUMANDA:
-      displayPixels(glumanda);
+      displayFrame(glumanda);
       break;
       
     case POKEBALL:
-      displayPixels(pokeball);
+      displayFrame(pokeball);
       break;
       
     case PIKACHU:
-      displayPixels(pikachu);
+      displayFrame(pikachu);
       break;
       
     case BLANK:
-      displayPixels(blank);
+      displayFrame(blank);
       break;
   }
 }
