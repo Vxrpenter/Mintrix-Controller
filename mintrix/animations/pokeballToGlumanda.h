@@ -1,3 +1,5 @@
+int pokeballToGlumandaFrames = 2;
+
 CRGB pokeballToGlumanda[][9][9] = {
   {
     {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black}, 
