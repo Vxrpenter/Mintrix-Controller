@@ -68,31 +68,20 @@ int main() {
 }
 ```
 
-### [DisplayPicture](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/PictureDisplayProtocols.h#L12)
+### [DisplayFrame](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/PictureDisplayProtocols.h#L1)
 
-Displays a picture from the enum you enter, choose from the PixelArtType enum: [GLUMANDA, PIKACHU, POKEBALL, BLANK]
+Displays a picture from the picture you enter, choose from the pictures in the `./picture` directory
 ```c++
 int main() {
-  displayPicture(GLUMANDA);
+  displayFrame(glumanda);
 }
 ```
 
-### [DisplayPixels](https://github.com/Vxrpenter/Arduino-Sketch-Saves/blob/main/mintrix/PictureDisplayProtocols.h#L1)
+### [DisplayAnimation](https://github.com/Vxrpenter/Mintrix-Controller/blob/main/mintrix/AnimationDisplayProtocols.h#L1)
 
-Displays the pixels that have been specified in a 9x9 array, accounting for 81 pixels in total. Just create an array like the one shown below and then put it into the function to display it on the mintrix.
+Displays a series of frames from the animation you enter, choose from the animations in the `./animation` directory
 ```c++
 int main() {
-  CRGB blank[9][9] = {
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black}, 
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black},
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black}, 
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black},
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black}, 
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black},
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black}, 
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black},
-    {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black}
-  };
-  displayPixels(blank);
+  displayAnimation(pokeballToGlumandaFrames, 1, pokeballToGlumanda)
 }
 ```
