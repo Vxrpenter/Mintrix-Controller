@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Mintrix Controller</h1>
   
-  A software for easy displaying of pictures, animations, effects etc. for the mintrix c++ libary. It is used for LED Matrixes, specifically for 9x9 ones (81 Pixels)
+  A software for easy displaying of pictures, animations, effects etc. for the mintrix arduino libary. It is used for LED Matrixes, specifically for 9x9 ones (81 Pixels)
 </div>
 
 ---
