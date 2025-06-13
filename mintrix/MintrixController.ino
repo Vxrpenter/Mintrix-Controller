@@ -21,5 +21,5 @@ void setup() {
 }
 
 void loop() {
-  displayAnimation(2, 2, animation);
+  displayAnimation(pokeballToGlumandaFrames, 2, pokeballToGlumanda);
 }
