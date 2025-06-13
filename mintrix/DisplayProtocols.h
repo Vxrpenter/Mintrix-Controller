@@ -1,16 +1,3 @@
-int calculateUserLedPosition(int row, int led) {
-  int exactRow = row-1;
-  int exactLed = led-1;
-
-  if (exactRow%2 != 0) {
-    exactLed = 8-exactLed; 
-  }
-  
-  int returnValue = exactRow*9+exactLed;
-
-  return returnValue;
-}
-
 int calculateProgramLedPosition(int row, int led) {
   int exactRow = row;
   int exactLed = led;
@@ -22,6 +9,10 @@ int calculateProgramLedPosition(int row, int led) {
   int returnValue = exactRow*9+exactLed;
 
   return returnValue;
+}
+
+int calculateUserLedPosition(int row, int led) {
+  return calculateProgramLedPosition(row-1, led-1);
 }
 
 void fillCompletely(CRGB color) {
