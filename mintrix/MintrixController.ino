@@ -5,7 +5,6 @@
 #include "animations/manifest.h"
 
 // Included Classes
-#include "Enums.h"
 #include "Utility.h"
 #include "DisplayProtocols.h"
 #include "Effects.h"
