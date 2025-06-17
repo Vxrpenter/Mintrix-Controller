@@ -1,4 +1,5 @@
 void tracePathFrom(int row, int led, CRGB color, int customDelay = 500) {
+  Mintrix.clear();
   int exactLed = calculateUserLedPosition(row, led);
   for(int x=exactLed; x < 81; x++) {
     Mintrix.leds[x] = color;
@@ -11,6 +12,7 @@ void tracePathFrom(int row, int led, CRGB color, int customDelay = 500) {
 }
 
 void blinkLED(int row, int led, CRGB color, int recursions, int customDelay = 500) {
+  Mintrix.clear();
   int exactLed = calculateUserLedPosition(row, led);
   for(int x=0; x < recursions; x++) {
     Mintrix.leds[exactLed] = color;
@@ -23,6 +25,7 @@ void blinkLED(int row, int led, CRGB color, int recursions, int customDelay = 50
 }
 
 void matrixLights(CRGB colorOne, CRGB colorTwo, int recursions = 10, int customDelay = 500) {
+  Mintrix.clear();
   bool currentState = true;
   
   for(int x=0; x < recursions; x++) {
