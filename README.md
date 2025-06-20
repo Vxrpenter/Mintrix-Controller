@@ -22,7 +22,7 @@ meaning the one from viewing the Mintrix. This means it starts with 1 and not 0 
 and ends with 8 instead of 9
 ```c++
 int main() {
-  calculateUserLedPosition(1, 1)
+  calculateUserLedPosition(1, 1);
 }
 ```
 
@@ -32,7 +32,7 @@ The first value stands for the row and the second for the led. It gives you the 
 meaning the one from viewing the Mintrix. This means it starts with 0 and ends with 9 like normal arrays.
 ```c++
 int main() {
-  calculateProgramLedPosition(0, 0)
+  calculateProgramLedPosition(0, 0);
 }
 ```
 
@@ -41,7 +41,7 @@ int main() {
 Fills all 81 pixels with exactly one color
 ```c++
 int main() {
-  fillCompletely(CRGB::Red)
+  fillCompletely(CRGB::Red);
 }
 ```
 
@@ -52,7 +52,7 @@ the programm follow from the given cordinates to the end of the mintirx, restart
 
 ```c++
 int main() {
-  tracePathFrom(1, 1, CRGB::Red, 500)
+  tracePathFrom(1, 1, CRGB::Red, 500);
 }
 ```
 
@@ -61,7 +61,7 @@ int main() {
 First enter row and led, then put color and recursions (default 10) ending with a custom delay (default 500ms). This makes the specified led blink until reaching the end of the delay.
 ```c++
 int main() {
-  blinkLED(1, 1, CRGB::Red, 10, 500)
+  blinkLED(1, 1, CRGB::Red, 10, 500);
 }
 ```
 
@@ -70,7 +70,7 @@ int main() {
 First enter two colors to be displayed, then number of recursions (default 10) and at last a custom delay (default 500ms). This makes one half of the pixels blink in one color, then switing to another color.
 ```c++
 int main() {
-  matrixLights(CRGB::Red, CRGB::Green, 10, 500)
+  matrixLights(CRGB::Red, CRGB::Green, 10, 500);
 }
 ```
 
@@ -88,7 +88,7 @@ int main() {
 Displays a series of frames from the animation you enter, choose from the animations in the `./animation` directory
 ```c++
 int main() {
-  displayAnimation(pokeballToGlumandaFrames, 1, pokeballToGlumanda)
+  displayAnimation(pokeballToGlumandaFrames, 1, pokeballToGlumanda);
 }
 ```
 
@@ -97,7 +97,7 @@ int main() {
 For creating a picture, first navigate to `./pictures` and duplicate the `template.h`. You should now uncomment everything making it look something like this. Make sure to edit the blank pixels to your prefered colors.
 
 ```c++
-/CRGB templatePicture[9][9] = {
+CRGB templatePicture[9][9] = {
     {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black}, 
     {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black},
     {CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black, CRGB::Black}, 
